@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReklamoStokTakipModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BirlestirilenParcalar">
+    <Key>
+      <PropertyRef Name="BirlestirilenParcalarId" />
+    </Key>
+    <Property Name="BirlestirilenParcalarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StokId" Type="int" />
+    <Property Name="BirlestirilenUrunId" Type="int" />
+  </EntityType>
+  <EntityType Name="BirlestirilenUrun">
+    <Key>
+      <PropertyRef Name="BirlestirilenUrunId" />
+    </Key>
+    <Property Name="BirlestirilenUrunId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BirlestirilenUrunAdi" Type="varchar" MaxLength="100" />
+    <Property Name="BirlestirilenUrunParcalari" Type="varchar" MaxLength="300" />
+    <Property Name="UrunOlusturmaTarihi" Type="datetime" />
+    <Property Name="UrunStokId" Type="int" />
+  </EntityType>
+  <EntityType Name="Firmalar">
+    <Key>
+      <PropertyRef Name="FirmaId" />
+    </Key>
+    <Property Name="FirmaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirmaAdi" Type="varchar" MaxLength="100" />
+    <Property Name="FirmaAdresi" Type="varchar" MaxLength="500" />
+    <Property Name="FirmaTelNo" Type="varchar" MaxLength="50" />
+    <Property Name="FirmaAlınanSatilan" Type="int" />
+  </EntityType>
+  <EntityType Name="GenelUrunler">
+    <Key>
+      <PropertyRef Name="Urun_id" />
+    </Key>
+    <Property Name="Urun_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Urun_adi" Type="varchar" MaxLength="100" />
+    <Property Name="Urun_kodu" Type="varchar" MaxLength="100" />
+    <Property Name="Urun_Ol_Tarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PersonelTable">
+    <Key>
+      <PropertyRef Name="Personel_id" />
+    </Key>
+    <Property Name="Personel_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Personel_adi" Type="varchar" MaxLength="50" />
+    <Property Name="Personel_soyadi" Type="varchar" MaxLength="50" />
+    <Property Name="Personel_departman" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ReserveUrunler">
+    <Key>
+      <PropertyRef Name="ReseverId" />
+    </Key>
+    <Property Name="ReseverId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunStokId" Type="int" />
+    <Property Name="ReserveUrunAdet" Type="float" />
+    <Property Name="ReserveTarihi" Type="datetime" />
+    <Property Name="ReserveYapilanFirma" Type="int" />
+  </EntityType>
+  <EntityType Name="SatilanUrunler">
+    <Key>
+      <PropertyRef Name="SatilanUrun_id" />
+    </Key>
+    <Property Name="SatilanUrun_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SatilanUrun_adi" Type="varchar" MaxLength="100" />
+    <Property Name="SatanPersonel" Type="int" />
+    <Property Name="UrununSatilisTarihi" Type="datetime" />
+    <Property Name="UrunSatisFiyati" Type="decimal" Precision="19" Scale="5" />
+    <Property Name="UrunTur_id" Type="int" Nullable="false" />
+    <Property Name="UrunStok_id" Type="int" />
+    <Property Name="UrunToplamKar" Type="float" />
+    <Property Name="SatilanUrunAdet" Type="float" />
+    <Property Name="FirmaId" Type="int" />
+  </EntityType>
+  <EntityType Name="SikayetTur">
+    <Key>
+      <PropertyRef Name="SikayetTurId" />
+    </Key>
+    <Property Name="SikayetTurId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SikayetAciklama" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SikayetUrunler">
+    <Key>
+      <PropertyRef Name="SikayetId" />
+    </Key>
+    <Property Name="SikayetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SatilanUrunId" Type="int" />
+    <Property Name="UrunStokId" Type="int" />
+    <Property Name="SikayetTuruId" Type="int" />
+    <Property Name="FirmaId" Type="int" />
+    <Property Name="UrunAdet" Type="float" />
+    <Property Name="SikayetTarihi" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StoktakiUrunler">
+    <Key>
+      <PropertyRef Name="UrunStok_id" />
+    </Key>
+    <Property Name="UrunStok_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunAlisFiyati" Type="decimal" Precision="19" Scale="5" />
+    <Property Name="UrunTur_id" Type="int" />
+    <Property Name="UrunAdi" Type="varchar" MaxLength="100" />
+    <Property Name="UrunAdet" Type="float" />
+    <Property Name="UrunGirisTarihi" Type="datetime" />
+    <Property Name="FirmaId" Type="int" />
+  </EntityType>
+  <Association Name="FK_BirlestirilenParcalar_StoktakiUrunler">
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="0..1" />
+    <End Role="BirlestirilenParcalar" Type="Self.BirlestirilenParcalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StoktakiUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Principal>
+      <Dependent Role="BirlestirilenParcalar">
+        <PropertyRef Name="StokId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BirlestirilenUrun_StoktakiUrunler">
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="0..1" />
+    <End Role="BirlestirilenUrun" Type="Self.BirlestirilenUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StoktakiUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Principal>
+      <Dependent Role="BirlestirilenUrun">
+        <PropertyRef Name="UrunStokId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReserveUrunler_Firmalar">
+    <End Role="Firmalar" Type="Self.Firmalar" Multiplicity="0..1" />
+    <End Role="ReserveUrunler" Type="Self.ReserveUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaId" />
+      </Principal>
+      <Dependent Role="ReserveUrunler">
+        <PropertyRef Name="ReserveYapilanFirma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ReserveUrunler_StoktakiUrunler">
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="0..1" />
+    <End Role="ReserveUrunler" Type="Self.ReserveUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StoktakiUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Principal>
+      <Dependent Role="ReserveUrunler">
+        <PropertyRef Name="UrunStokId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SatilanUrunler_Firmalar">
+    <End Role="Firmalar" Type="Self.Firmalar" Multiplicity="0..1" />
+    <End Role="SatilanUrunler" Type="Self.SatilanUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaId" />
+      </Principal>
+      <Dependent Role="SatilanUrunler">
+        <PropertyRef Name="FirmaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SatilanUrunler_GenelUrunler">
+    <End Role="GenelUrunler" Type="Self.GenelUrunler" Multiplicity="1" />
+    <End Role="SatilanUrunler" Type="Self.SatilanUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenelUrunler">
+        <PropertyRef Name="Urun_id" />
+      </Principal>
+      <Dependent Role="SatilanUrunler">
+        <PropertyRef Name="UrunTur_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SatilanUrunler_PersonelTable">
+    <End Role="PersonelTable" Type="Self.PersonelTable" Multiplicity="0..1" />
+    <End Role="SatilanUrunler" Type="Self.SatilanUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonelTable">
+        <PropertyRef Name="Personel_id" />
+      </Principal>
+      <Dependent Role="SatilanUrunler">
+        <PropertyRef Name="SatanPersonel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SatilanUrunler_StoktakiUrunler">
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="0..1" />
+    <End Role="SatilanUrunler" Type="Self.SatilanUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StoktakiUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Principal>
+      <Dependent Role="SatilanUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SikayetUrunler_Firmalar">
+    <End Role="Firmalar" Type="Self.Firmalar" Multiplicity="0..1" />
+    <End Role="SikayetUrunler" Type="Self.SikayetUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaId" />
+      </Principal>
+      <Dependent Role="SikayetUrunler">
+        <PropertyRef Name="FirmaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SikayetUrunler_SatilanUrunler">
+    <End Role="SatilanUrunler" Type="Self.SatilanUrunler" Multiplicity="0..1" />
+    <End Role="SikayetUrunler" Type="Self.SikayetUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SatilanUrunler">
+        <PropertyRef Name="SatilanUrun_id" />
+      </Principal>
+      <Dependent Role="SikayetUrunler">
+        <PropertyRef Name="SatilanUrunId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SikayetUrunler_SikayetTur">
+    <End Role="SikayetTur" Type="Self.SikayetTur" Multiplicity="0..1" />
+    <End Role="SikayetUrunler" Type="Self.SikayetUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SikayetTur">
+        <PropertyRef Name="SikayetTurId" />
+      </Principal>
+      <Dependent Role="SikayetUrunler">
+        <PropertyRef Name="SikayetTuruId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SikayetUrunler_StoktakiUrunler">
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="0..1" />
+    <End Role="SikayetUrunler" Type="Self.SikayetUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StoktakiUrunler">
+        <PropertyRef Name="UrunStok_id" />
+      </Principal>
+      <Dependent Role="SikayetUrunler">
+        <PropertyRef Name="UrunStokId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoktakiUrunler_Firmalar">
+    <End Role="Firmalar" Type="Self.Firmalar" Multiplicity="0..1" />
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaId" />
+      </Principal>
+      <Dependent Role="StoktakiUrunler">
+        <PropertyRef Name="FirmaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StoktakiUrunler_GenelUrunler">
+    <End Role="GenelUrunler" Type="Self.GenelUrunler" Multiplicity="0..1" />
+    <End Role="StoktakiUrunler" Type="Self.StoktakiUrunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenelUrunler">
+        <PropertyRef Name="Urun_id" />
+      </Principal>
+      <Dependent Role="StoktakiUrunler">
+        <PropertyRef Name="UrunTur_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ReklamoStokTakipModelStoreContainer">
+    <EntitySet Name="BirlestirilenParcalar" EntityType="Self.BirlestirilenParcalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BirlestirilenUrun" EntityType="Self.BirlestirilenUrun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Firmalar" EntityType="Self.Firmalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenelUrunler" EntityType="Self.GenelUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonelTable" EntityType="Self.PersonelTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReserveUrunler" EntityType="Self.ReserveUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SatilanUrunler" EntityType="Self.SatilanUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SikayetTur" EntityType="Self.SikayetTur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SikayetUrunler" EntityType="Self.SikayetUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoktakiUrunler" EntityType="Self.StoktakiUrunler" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BirlestirilenParcalar_StoktakiUrunler" Association="Self.FK_BirlestirilenParcalar_StoktakiUrunler">
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+      <End Role="BirlestirilenParcalar" EntitySet="BirlestirilenParcalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BirlestirilenUrun_StoktakiUrunler" Association="Self.FK_BirlestirilenUrun_StoktakiUrunler">
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+      <End Role="BirlestirilenUrun" EntitySet="BirlestirilenUrun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReserveUrunler_Firmalar" Association="Self.FK_ReserveUrunler_Firmalar">
+      <End Role="Firmalar" EntitySet="Firmalar" />
+      <End Role="ReserveUrunler" EntitySet="ReserveUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ReserveUrunler_StoktakiUrunler" Association="Self.FK_ReserveUrunler_StoktakiUrunler">
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+      <End Role="ReserveUrunler" EntitySet="ReserveUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SatilanUrunler_Firmalar" Association="Self.FK_SatilanUrunler_Firmalar">
+      <End Role="Firmalar" EntitySet="Firmalar" />
+      <End Role="SatilanUrunler" EntitySet="SatilanUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SatilanUrunler_GenelUrunler" Association="Self.FK_SatilanUrunler_GenelUrunler">
+      <End Role="GenelUrunler" EntitySet="GenelUrunler" />
+      <End Role="SatilanUrunler" EntitySet="SatilanUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SatilanUrunler_PersonelTable" Association="Self.FK_SatilanUrunler_PersonelTable">
+      <End Role="PersonelTable" EntitySet="PersonelTable" />
+      <End Role="SatilanUrunler" EntitySet="SatilanUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SatilanUrunler_StoktakiUrunler" Association="Self.FK_SatilanUrunler_StoktakiUrunler">
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+      <End Role="SatilanUrunler" EntitySet="SatilanUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SikayetUrunler_Firmalar" Association="Self.FK_SikayetUrunler_Firmalar">
+      <End Role="Firmalar" EntitySet="Firmalar" />
+      <End Role="SikayetUrunler" EntitySet="SikayetUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SikayetUrunler_SatilanUrunler" Association="Self.FK_SikayetUrunler_SatilanUrunler">
+      <End Role="SatilanUrunler" EntitySet="SatilanUrunler" />
+      <End Role="SikayetUrunler" EntitySet="SikayetUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SikayetUrunler_SikayetTur" Association="Self.FK_SikayetUrunler_SikayetTur">
+      <End Role="SikayetTur" EntitySet="SikayetTur" />
+      <End Role="SikayetUrunler" EntitySet="SikayetUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SikayetUrunler_StoktakiUrunler" Association="Self.FK_SikayetUrunler_StoktakiUrunler">
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+      <End Role="SikayetUrunler" EntitySet="SikayetUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoktakiUrunler_Firmalar" Association="Self.FK_StoktakiUrunler_Firmalar">
+      <End Role="Firmalar" EntitySet="Firmalar" />
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StoktakiUrunler_GenelUrunler" Association="Self.FK_StoktakiUrunler_GenelUrunler">
+      <End Role="GenelUrunler" EntitySet="GenelUrunler" />
+      <End Role="StoktakiUrunler" EntitySet="StoktakiUrunler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

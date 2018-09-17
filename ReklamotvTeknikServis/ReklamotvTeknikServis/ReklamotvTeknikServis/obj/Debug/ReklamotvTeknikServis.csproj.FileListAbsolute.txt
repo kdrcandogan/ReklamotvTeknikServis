@@ -1,0 +1,94 @@
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll.config
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.pdb
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.xml
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.dll
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.pdb
+C:\Users\Mustafa\Documents\Visual Studio 2013\Projects\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csprojResolveAssemblyReference.cache
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll.config
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.pdb
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.xml
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csproj.CoreCompileInputs.cache
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.dll
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.pdb
+C:\Users\sevba\OneDrive\Masaüstü\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csprojResolveAssemblyReference.cache
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll.config
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.pdb
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.xml
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csprojAssemblyReference.cache
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csproj.CoreCompileInputs.cache
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csproj.CopyComplete
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.dll
+D:\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.pdb
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll.config
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\ReklamotvTeknikServis.pdb
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\EntityFramework.SqlServer.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Razor.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Deployment.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Webpages.Razor.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Helpers.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\System.Web.Mvc.xml
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csprojAssemblyReference.cache
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csproj.CoreCompileInputs.cache
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.csproj.CopyComplete
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.dll
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\obj\Debug\ReklamotvTeknikServis.pdb
+C:\Users\svbnbyrk\Desktop\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\ReklamotvTeknikServis\bin\Microsoft.Web.Infrastructure.dll

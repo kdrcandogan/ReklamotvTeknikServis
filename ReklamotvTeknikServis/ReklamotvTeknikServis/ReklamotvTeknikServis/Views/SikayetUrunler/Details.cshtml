@@ -1,0 +1,66 @@
+﻿@model ReklamotvTeknikServis.SikayetUrunler
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SikayetUrunler</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UrunAdet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrunAdet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SikayetTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SikayetTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Firmalar.FirmaAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Firmalar.FirmaAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SatilanUrunler.SatilanUrun_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SatilanUrunler.SatilanUrun_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SikayetTur.SikayetAciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SikayetTur.SikayetAciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoktakiUrunler.UrunAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoktakiUrunler.UrunAdi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SikayetId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

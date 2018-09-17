@@ -1,0 +1,106 @@
+﻿@model IEnumerable<ReklamotvTeknikServis.SikayetUrunler>
+
+@{
+    ViewBag.Title = "Index";
+    int rowcount = 0;
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN SAMPLE TABLE PORTLET-->
+        <div class="portlet box purple">
+            <div class="portlet-title">
+                <div class="caption">
+                    Ürünler
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse">
+                    </a>
+                    <a href="#portlet-config" data-toggle="modal" class="config">
+                    </a>
+                    <a href="javascript:;" class="reload">
+                    </a>
+                    <a href="javascript:;" class="remove">
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                </th>
+                                <th>
+                                    Satılan Ürün Adı
+                                </th>
+                                <th>
+                                    Stok Adı
+                                </th>
+                                <th>
+                                    Şikayet Açıklama
+                                </th>
+                                <th>
+                                    Şikayet Tarihi
+                                </th>
+                                <th>
+                                    Firma Adı
+                                </th>
+                                <th>
+                                    Adet
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @{
+                                            rowcount++;
+                                        }
+                                        @rowcount
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SatilanUrunler.SatilanUrun_adi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.StoktakiUrunler.UrunAdi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SikayetTur.SikayetAciklama)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SikayetTarihi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Firmalar.FirmaAdi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UrunAdet)
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-danger">
+
+                                            @Html.ActionLink("Sil", "Delete", new { id = item.SikayetId }, new { @style = "color:white" })
+                                        </span>
+                                        <span class="label label-sm label-warning">
+                                            @Html.ActionLink("Düzenle", "Edit", new { id = item.SikayetId }, new { @style = "color:white" })
+                                        </span>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

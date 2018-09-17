@@ -1,0 +1,56 @@
+﻿@model ReklamotvTeknikServis.PersonelTable
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.Personel_id)
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption font-red-sunglo">
+                        <span class="caption-subject bold uppercase"> Ürünü Düzenle</span>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group form-md-line-input">
+                                @Html.TextBoxFor(model => model.Personel_adi, new { @class = "form-control" })
+                                <label for="form_control_1">Personel Adı</label>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                @Html.TextBoxFor(model => model.Personel_soyadi, new { @class = "form-control" })
+                                <label for="form_control_1">Personel Soyadı</label>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                @Html.TextBoxFor(model => model.Personel_departman, new { @class = "form-control" })
+                                <label for="form_control_1">Personel Departmanı</label>
+                            </div>
+                        </div>
+                        <div class="form-actions noborder">
+                            <input type="submit" value="Kaydet" class="btn blue" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END SAMPLE FORM PORTLET-->
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

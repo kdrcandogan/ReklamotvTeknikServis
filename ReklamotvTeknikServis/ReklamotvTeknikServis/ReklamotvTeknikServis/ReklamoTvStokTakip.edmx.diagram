@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c41fdbe7bdf245fd9f68c4a74fba6bc2" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.GenelUrunler" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.SatilanUrunler" Width="1.5" PointX="7.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.StoktakiUrunler" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SatilanUrunler_GenelUrunler" ManuallyRouted="false" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_StoktakiUrunler_GenelUrunler" ManuallyRouted="false" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SatilanUrunler_StoktakiUrunler" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.PersonelTable" Width="1.5" PointX="3.375" PointY="0.875" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SatilanUrunler_PersonelTable" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.BirlestirilenUrun" Width="1.5" PointX="5.25" PointY="9.25" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.Firmalar" Width="1.5" PointX="0.75" PointY="6.25" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.ReserveUrunler" Width="1.5" PointX="8.25" PointY="9.25" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.SikayetTur" Width="1.5" PointX="7.25" PointY="0.875" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.SikayetUrunler" Width="1.5" PointX="9.5" PointY="5.125" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_BirlestirilenUrun_StoktakiUrunler" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_ReserveUrunler_Firmalar" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SatilanUrunler_Firmalar" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SikayetUrunler_Firmalar" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_StoktakiUrunler_Firmalar" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_ReserveUrunler_StoktakiUrunler" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SikayetUrunler_SatilanUrunler" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SikayetUrunler_SikayetTur" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_SikayetUrunler_StoktakiUrunler" />
+        <EntityTypeShape EntityType="ReklamoStokTakipModel.BirlestirilenParcalar" Width="1.5" PointX="10.5" PointY="9.625" />
+        <AssociationConnector Association="ReklamoStokTakipModel.FK_BirlestirilenParcalar_StoktakiUrunler" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

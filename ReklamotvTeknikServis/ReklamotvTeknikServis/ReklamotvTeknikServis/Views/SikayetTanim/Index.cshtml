@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ReklamotvTeknikServis.SikayetTur>
+
+@{
+    ViewBag.Title = "Index";
+    int rowcount = 0;
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- BEGIN SAMPLE TABLE PORTLET-->
+        <div class="portlet box purple">
+            <div class="portlet-title">
+                <div class="caption">
+                    Şikayet Tanımlama
+                </div>
+                <div class="tools">
+                    <a href="javascript:;" class="collapse">
+                    </a>
+                    <a href="#portlet-config" data-toggle="modal" class="config">
+                    </a>
+                    <a href="javascript:;" class="reload">
+                    </a>
+                    <a href="javascript:;" class="remove">
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                </th>
+                                <th>
+                                    Şikayet Açıklama
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @{
+                                rowcount++;
+                                        }
+                                        @rowcount
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SikayetAciklama)
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-danger">
+
+                                            @Html.ActionLink("Sil", "Delete", new { id = item.SikayetTurId }, new { @style = "color:white" })
+                                        </span>
+                                        <span class="label label-sm label-warning">
+                                            @Html.ActionLink("Düzenle", "Edit", new { id = item.SikayetTurId }, new { @style = "color:white" })
+                                        </span>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

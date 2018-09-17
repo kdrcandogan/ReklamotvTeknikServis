@@ -1,0 +1,119 @@
+﻿@model IEnumerable<ReklamotvTeknikServis.SatilanUrunler>
+
+@{
+    ViewBag.Title = "Index";
+    int rowcount = 0;
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN SAMPLE TABLE PORTLET-->
+            <div class="portlet box purple">
+                <div class="portlet-title">
+                    <div class="caption">
+                        Ürünler
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse">
+                        </a>
+                        <a href="#portlet-config" data-toggle="modal" class="config">
+                        </a>
+                        <a href="javascript:;" class="reload">
+                        </a>
+                        <a href="javascript:;" class="remove">
+                        </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="table-scrollable">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <th>
+                                        Satılan Ürün Adı
+                                    </th>
+                                    <th>
+                                        Ürünün Satılış Tarihi
+                                    </th>
+                                    <th>
+                                        Ürünün Satılış Fiyatı
+                                    </th>
+                                    <th>
+                                        Toplam Kar
+                                    </th>
+                                    <th>
+                                        Stok Adı
+                                    </th>
+                                    <th>
+                                        Ürünün Adı
+                                    </th>
+                                    <th>
+                                        Satan Personel Adı
+                                    </th>
+                                    <th>
+                                        Adet
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @{
+                                                rowcount++;
+                                            }
+                                            @rowcount
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.SatilanUrun_adi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UrununSatilisTarihi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UrunSatisFiyati)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.UrunToplamKar)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.GenelUrunler.Urun_adi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.StoktakiUrunler.UrunAdi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PersonelTable.Personel_adi)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.SatilanUrunAdet)
+                                        </td>
+                                        <td>
+                                            <span class="label label-sm label-danger">
+
+                                                @Html.ActionLink("Sil", "Delete", new { id = item.SatilanUrun_adi }, new { @style = "color:white" })
+                                            </span>
+                                            <span class="label label-sm label-warning">
+                                                @Html.ActionLink("Düzenle", "Edit", new { id = item.SatilanUrun_adi }, new { @style = "color:white" })
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

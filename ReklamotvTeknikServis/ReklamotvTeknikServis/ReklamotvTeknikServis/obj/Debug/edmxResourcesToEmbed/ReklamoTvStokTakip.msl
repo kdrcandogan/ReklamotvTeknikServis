@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReklamoStokTakipModelStoreContainer" CdmEntityContainer="ReklamoStokTakipEntities">
+    <EntitySetMapping Name="GenelUrunler">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.GenelUrunler">
+        <MappingFragment StoreEntitySet="GenelUrunler">
+          <ScalarProperty Name="Urun_Ol_Tarih" ColumnName="Urun_Ol_Tarih" />
+          <ScalarProperty Name="Urun_id" ColumnName="Urun_id" />
+          <ScalarProperty Name="Urun_adi" ColumnName="Urun_adi" />
+          <ScalarProperty Name="Urun_kodu" ColumnName="Urun_kodu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SatilanUrunler">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.SatilanUrunler">
+        <MappingFragment StoreEntitySet="SatilanUrunler">
+          <ScalarProperty Name="FirmaId" ColumnName="FirmaId" />
+          <ScalarProperty Name="SatilanUrunAdet" ColumnName="SatilanUrunAdet" />
+          <ScalarProperty Name="SatilanUrun_id" ColumnName="SatilanUrun_id" />
+          <ScalarProperty Name="SatilanUrun_adi" ColumnName="SatilanUrun_adi" />
+          <ScalarProperty Name="SatanPersonel" ColumnName="SatanPersonel" />
+          <ScalarProperty Name="UrununSatilisTarihi" ColumnName="UrununSatilisTarihi" />
+          <ScalarProperty Name="UrunSatisFiyati" ColumnName="UrunSatisFiyati" />
+          <ScalarProperty Name="UrunTur_id" ColumnName="UrunTur_id" />
+          <ScalarProperty Name="UrunStok_id" ColumnName="UrunStok_id" />
+          <ScalarProperty Name="UrunToplamKar" ColumnName="UrunToplamKar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoktakiUrunler">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.StoktakiUrunler">
+        <MappingFragment StoreEntitySet="StoktakiUrunler">
+          <ScalarProperty Name="FirmaId" ColumnName="FirmaId" />
+          <ScalarProperty Name="UrunGirisTarihi" ColumnName="UrunGirisTarihi" />
+          <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+          <ScalarProperty Name="UrunStok_id" ColumnName="UrunStok_id" />
+          <ScalarProperty Name="UrunAlisFiyati" ColumnName="UrunAlisFiyati" />
+          <ScalarProperty Name="UrunTur_id" ColumnName="UrunTur_id" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonelTable">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.PersonelTable">
+        <MappingFragment StoreEntitySet="PersonelTable">
+          <ScalarProperty Name="Personel_departman" ColumnName="Personel_departman" />
+          <ScalarProperty Name="Personel_soyadi" ColumnName="Personel_soyadi" />
+          <ScalarProperty Name="Personel_adi" ColumnName="Personel_adi" />
+          <ScalarProperty Name="Personel_id" ColumnName="Personel_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BirlestirilenUrun">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.BirlestirilenUrun">
+        <MappingFragment StoreEntitySet="BirlestirilenUrun">
+          <ScalarProperty Name="UrunStokId" ColumnName="UrunStokId" />
+          <ScalarProperty Name="UrunOlusturmaTarihi" ColumnName="UrunOlusturmaTarihi" />
+          <ScalarProperty Name="BirlestirilenUrunParcalari" ColumnName="BirlestirilenUrunParcalari" />
+          <ScalarProperty Name="BirlestirilenUrunAdi" ColumnName="BirlestirilenUrunAdi" />
+          <ScalarProperty Name="BirlestirilenUrunId" ColumnName="BirlestirilenUrunId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Firmalar">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.Firmalar">
+        <MappingFragment StoreEntitySet="Firmalar">
+          <ScalarProperty Name="FirmaAlınanSatilan" ColumnName="FirmaAlınanSatilan" />
+          <ScalarProperty Name="FirmaTelNo" ColumnName="FirmaTelNo" />
+          <ScalarProperty Name="FirmaAdresi" ColumnName="FirmaAdresi" />
+          <ScalarProperty Name="FirmaAdi" ColumnName="FirmaAdi" />
+          <ScalarProperty Name="FirmaId" ColumnName="FirmaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReserveUrunler">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.ReserveUrunler">
+        <MappingFragment StoreEntitySet="ReserveUrunler">
+          <ScalarProperty Name="ReserveYapilanFirma" ColumnName="ReserveYapilanFirma" />
+          <ScalarProperty Name="ReserveTarihi" ColumnName="ReserveTarihi" />
+          <ScalarProperty Name="ReserveUrunAdet" ColumnName="ReserveUrunAdet" />
+          <ScalarProperty Name="UrunStokId" ColumnName="UrunStokId" />
+          <ScalarProperty Name="ReseverId" ColumnName="ReseverId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SikayetTur">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.SikayetTur">
+        <MappingFragment StoreEntitySet="SikayetTur">
+          <ScalarProperty Name="SikayetAciklama" ColumnName="SikayetAciklama" />
+          <ScalarProperty Name="SikayetTurId" ColumnName="SikayetTurId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SikayetUrunler">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.SikayetUrunler">
+        <MappingFragment StoreEntitySet="SikayetUrunler">
+          <ScalarProperty Name="SikayetTarihi" ColumnName="SikayetTarihi" />
+          <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+          <ScalarProperty Name="FirmaId" ColumnName="FirmaId" />
+          <ScalarProperty Name="SikayetTuruId" ColumnName="SikayetTuruId" />
+          <ScalarProperty Name="UrunStokId" ColumnName="UrunStokId" />
+          <ScalarProperty Name="SatilanUrunId" ColumnName="SatilanUrunId" />
+          <ScalarProperty Name="SikayetId" ColumnName="SikayetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BirlestirilenParcalar">
+      <EntityTypeMapping TypeName="ReklamoStokTakipModel.BirlestirilenParcalar">
+        <MappingFragment StoreEntitySet="BirlestirilenParcalar">
+          <ScalarProperty Name="BirlestirilenUrunId" ColumnName="BirlestirilenUrunId" />
+          <ScalarProperty Name="StokId" ColumnName="StokId" />
+          <ScalarProperty Name="BirlestirilenParcalarId" ColumnName="BirlestirilenParcalarId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

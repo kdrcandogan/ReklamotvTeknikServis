@@ -1,0 +1,50 @@
+﻿@model ReklamotvTeknikServis.Firmalar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Firmalar</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaAdresi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaAdresi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaTelNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaTelNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaAlınanSatilan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaAlınanSatilan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FirmaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

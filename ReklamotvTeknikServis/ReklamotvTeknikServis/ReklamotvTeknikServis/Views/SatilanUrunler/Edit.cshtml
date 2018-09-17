@@ -1,0 +1,76 @@
+﻿@model ReklamotvTeknikServis.SatilanUrunler
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.SatilanUrun_id)
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption font-red-sunglo">
+                        <span class="caption-subject bold uppercase"> Yeni Satılan Ürün</span>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <form role="form">
+                        <div class="form-body">
+                            <div class="form-group form-md-line-input">
+                                @Html.TextBoxFor(model => model.SatilanUrun_adi, new { @class = "form-control" })
+                                <label for="form_control_1">Satılan Ürün Adı</label>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                @Html.DropDownList("SatanPersonel", null, String.Empty, new { @class = "form-control" })
+                                <label for="form_control_1">Satan Personel</label>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                @Html.DropDownList("UrunTur_id", null, String.Empty, new { @class = "form-control" })
+                                <label for="form_control_1">Ürün Genel Adı</label>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                @Html.DropDownList("UrunStok_id", null, String.Empty, new { @class = "form-control" })
+                                <label for="form_control_1">Stok Adi</label>
+                            </div>
+                        </div>
+                        <div class="form-group form-md-line-input">
+                            @Html.TextBoxFor(model => model.UrunSatisFiyati, new { @class = "form-control" })
+                            <label for="form_control_1">Satış Fiyatı</label>
+                        </div>
+                        <div class="form-group form-md-line-input">
+                            @Html.TextBoxFor(model => model.UrunToplamKar, new { @class = "form-control" })
+                            <label for="form_control_1">Toplam Kar</label>
+                        </div>
+                        <div class="form-group form-md-line-input">
+                            @Html.TextBoxFor(model => model.SatilanUrunAdet, new { @class = "form-control" })
+                            <label for="form_control_1">Adet</label>
+                        </div>
+                        <div class="form-actions noborder">
+                            <input type="submit" value="Kaydet" class="btn blue" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END SAMPLE FORM PORTLET-->
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+
+        </div>
+    </div>
+}
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

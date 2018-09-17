@@ -1,0 +1,85 @@
+﻿
+@model IEnumerable<ReklamotvTeknikServis.StoktakiUrunler>
+@{
+    ViewBag.Title = "StokBirlestir";
+}
+<script type="text/javascript" src="/Scripts/jquery-1.10.2.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var preValue=0;
+        $('#seciliStok').on('change', function () {
+            $('#checkboxes input:disabled').each(function () {
+                $(this).prop('disabled', false);
+            });
+            $('input:checkbox[value="' + $(this).val() + '"]').prop('disabled', true);
+
+        });
+
+        $(document).on('click', '#stokbutton', function (event) {
+            var seciliId = $('#seciliStok option:selected').val();
+
+            var selected = [];
+            $('#checkboxes input:checked').each(function () {
+                selected.push($(this).attr('value'));
+            });
+            var url = "/StoktakiUrunler/StokKaydet";
+            jQuery.ajaxSettings.traditional = true;
+
+            $.post(url, { stokId: seciliId, seciliUrunler: selected }, function (data) {
+                $("#result").html(data);
+            });
+        });
+
+    });
+</script>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="portlet light">
+            <div class="portlet-title">
+                <div class="caption font-red-sunglo">
+                    <span class="caption-subject bold uppercase"> Stok Birleştir</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                    <div class="form-body">
+                        <div class="form-group form-md-line-input">
+                            <select class="form-control" id="seciliStok">
+                                <option></option>
+                                @foreach(var item1 in Model)
+                                {
+                                    <option value="@item1.UrunStok_id">@item1.UrunAdi</option>
+                                }
+                            </select>
+                            <label for="form_control_1">Birleştirilecek Ürün</label>
+                        </div>
+                        <div class="form-group" id="checkboxes">
+                            <label>Stok Bileşenleri</label>
+                            <div class="checkbox-list">
+                                @foreach(var item in Model)
+                                {
+                                    <label>
+                                        <input type="checkbox" name="stok" value="@item.UrunStok_id"> @item.UrunAdi
+                                    </label>
+                                }
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-actions noborder">
+                        <button class="btn blue" id="stokbutton">Kaydet</button>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6" >
+        <div class="portlet light" id="result">
+        </div>
+    </div>
+</div>
+
+
