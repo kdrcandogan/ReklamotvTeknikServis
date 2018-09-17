@@ -1,2 +1,1 @@
-# ReklamotvTeknikServis
-ReklamotvTeknikServis
+# Stok Takip
